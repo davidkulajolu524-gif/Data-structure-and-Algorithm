@@ -1,5 +1,5 @@
-# Name: Olatimilehin Majesty Oluwakolade
-# Matric Number: 240502090
+# Name: Kulajolu David
+# Matric Number: 240502063
 # Course of Study: Computer Science
 
 # Assignment 2: Queue Implementation in Python

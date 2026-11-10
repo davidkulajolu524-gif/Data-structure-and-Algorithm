@@ -1,7 +1,7 @@
 Assignment 2: Queue Data Structure
 
-Name: Olatimilehin Majesty Oluwakolade
-Matric Number: 240502090
+Name: Kulajolu David
+Matric Number: 240502063
 Course of Study: Computer Science
 
 A Queue works on the FIFO (First-In, First-Out) rule. It works just like a line of students waiting at the cafeteria: the first person to join the line is the first person to get served and leave.
