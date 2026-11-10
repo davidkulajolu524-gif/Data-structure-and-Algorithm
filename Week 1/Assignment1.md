@@ -1,7 +1,7 @@
 Assignment 1: Stack Applications and Array Operations
 
-Name: Olatimilehin Majesty Oluwakolade
-Matric Number: 240502090
+Name: Kulajolu David
+Matric Number: 240502063
 Course of Study: Computer Science
 
 Real-Life Applications of a Stack
