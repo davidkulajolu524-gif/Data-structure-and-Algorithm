@@ -1,60 +1,66 @@
-# Assignment 1: Array Operations in Python
-
-# Name: Olatimilehin Majesty Oluwakolade
-# Matric Number: 240502090
+# Name: Kulajolu David
+# Matric Number: 240502063
 # Course of Study: Computer Science
 
-# Using an array of test scores for a class size of 8 students:
+# Assignment 1: Array Operations in Python
 
-# Creating the array (using a Python list as an array of integers)
-class_scores = [65, 72, 80, 55, 90, 68, 75, 84]
+# Creating an array containing the examination
+# results of eight students.
 
-print("--- 1. Original Array ---")
-print("Scores:", class_scores)
-print("Number of students (size):", len(class_scores))
+scores = [78, 85, 62, 91, 73, 88, 56, 80]
 
-# 2. Traversal (looping through and printing each item one by one)
-print("\n--- 2. Traversing the Array ---")
-for i in range(len(class_scores)):
-    print("Student at index", i, "scored:", class_scores[i])
+# 1. Displaying the original array
+print("=== INITIAL ARRAY ===")
+print("Student Scores:", scores)
+print("Total Elements:", len(scores))
 
-# 3. Accessing an element by index
-print("\n--- 3. Accessing Elements ---")
-print("First student's score:", class_scores[0])
-print("Fourth student's score:", class_scores[3])
+# 2. Traversing the array
+print("\n=== ARRAY TRAVERSAL ===")
+for index, score in enumerate(scores):
+    print(f"Index {index}: {score}")
 
-# 4. Insertion (adding new scores)
-print("\n--- 4. Inserting Elements ---")
-class_scores.append(95)        # Adds 95 to the end of the array
-class_scores.insert(2, 77)     # Inserts 77 at index 2
-print("Array after adding 95 and 77:", class_scores)
+# 3. Retrieving elements using their positions
+print("\n=== ACCESSING ARRAY ELEMENTS ===")
+print("Score at the first position:", scores[0])
+print("Score at the fifth position:", scores[4])
 
-# 5. Updating (changing an existing score)
-print("\n--- 5. Updating an Element ---")
-# Changing the score at index 4 (from 55 to 60)
-class_scores[4] = 60
-print("Array after changing index 4 to 60:", class_scores)
+# 4. Adding new elements to the array
+print("\n=== INSERTION OPERATION ===")
+scores.append(94)
+scores.insert(3, 76)
+print("Array after insertion:", scores)
 
-# 6. Searching for an element
-print("\n--- 6. Searching for an Element ---")
-search_value = 90
-if search_value in class_scores:
-    position = class_scores.index(search_value)
-    print("Score", search_value, "was found at index:", position)
+# 5. Modifying an existing element
+print("\n=== UPDATING ARRAY ELEMENT ===")
+scores[2] = 70
+print("Modified array:", scores)
+
+# 6. Locating a particular value
+print("\n=== SEARCH OPERATION ===")
+target = 88
+
+if target in scores:
+    print("Value", target, "exists at index", scores.index(target))
 else:
-    print("Score not found in the array.")
+    print("The requested value does not exist.")
 
-# 7. Deletion (removing elements)
-print("\n--- 7. Deleting Elements ---")
-class_scores.remove(65)        # Removes the value 65 from the array
-removed_item = class_scores.pop(3)  # Removes the item at index 3
-print("Removed item at index 3:", removed_item)
-print("Array after deletions:", class_scores)
+# 7. Removing elements from the array
+print("\n=== DELETION OPERATION ===")
+scores.remove(56)
+deleted_score = scores.pop(4)
 
-# 8. Sorting and Reversing the array
-print("\n--- 8. Sorting and Reversing ---")
-class_scores.sort()
-print("Sorted from lowest to highest:", class_scores)
+print("Deleted element:", deleted_score)
+print("Array after deletion:", scores)
 
-class_scores.reverse()
-print("Reversed (highest to lowest):", class_scores)
+# 8. Arranging elements in ascending and descending order
+print("\n=== SORTING AND REVERSING ===")
+scores.sort()
+print("Ascending order:", scores)
+
+scores.reverse()
+print("Descending order:", scores)
+
+# Displaying the final number of elements
+print("\n=== FINAL ARRAY INFORMATION ===")
+print("Final Scores:", scores)
+print("Total Elements Remaining:", len(scores))
